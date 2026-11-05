@@ -1,0 +1,9 @@
+# Surat Untuk Kakak
+
+Landing page hari lahir (statik: HTML/CSS/JS). Buka `index.html` atau jalankan `python3 -m http.server`.
+
+## Untuk diganti
+- **Isi surat**: `index.html`, bahagian `#letter`
+- **Gambar**: letak `images/1.jpg`, `2.jpg`, `3.jpg` (tukar kapsyen dalam `index.html`)
+- **Muzik**: letak `audio/lagu.mp3`; butang muzik muncul secara automatik
+- **Warna**: pembolehubah `:root` di `style.css`

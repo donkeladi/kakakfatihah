@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selamat Hari Lahir, Kakak</title>
+<meta name="description" content="Satu surat kecil untuk Kakak NurFatihah Binti Ismail.">
+<meta name="theme-color" content="#faf6ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- 1. PEMBUKA: SAMPUL SURAT -->
+<section class="intro" id="intro" aria-label="Pembuka">
+  <p class="intro__hint">Ada sesuatu untuk Kakak…</p>
+  <button class="envelope" id="openBtn" aria-label="Buka surat">
+    <span class="envelope__back"></span>
+    <span class="envelope__paper"></span>
+    <span class="envelope__front"></span>
+    <span class="envelope__flap"></span>
+    <span class="envelope__seal" aria-hidden="true">F</span>
+  </button>
+  <p class="intro__cta">Sentuh untuk membuka</p>
+</section>
+
+<button class="music" id="musicBtn" aria-label="Mainkan muzik" hidden>
+  <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+
+<main id="main">
+
+  <!-- 2. HERO -->
+  <header class="hero">
+    <p class="eyebrow reveal">6 November</p>
+    <h1 class="hero__title reveal">Selamat Hari Lahir</h1>
+    <div class="rule reveal"></div>
+    <p class="hero__name" id="heroName" aria-label="NurFatihah Binti Ismail">NurFatihah Binti Ismail</p>
+    <p class="hero__age reveal" id="heroAge">Tahun ke-29</p>
+    <a class="scroll-cue reveal" href="#letter" aria-label="Teruskan membaca"><span></span></a>
+  </header>
+
+  <!-- 3. SURAT -->
+  <section class="letter section" id="letter">
+    <div class="paper">
+      <p class="letter__to reveal">Buat Kakak yang tersayang,</p>
+      <div class="letter__body" id="letterBody">
+        <p>Hari ini, adek nak berhenti sekejap daripada semua kesibukan, dan tulis sesuatu yang selalu adek simpan dalam hati tapi jarang sempat diucapkan.</p>
+        <p>Terima kasih kerana sentiasa ada. Kakak mungkin tak sedar, tapi banyak perkara kecil yang kakak buat sudah membentuk adek hari ini. Cara kakak jaga, cara kakak tegur, dan cara kakak diam-diam doakan, semuanya adek ingat.</p>
+        <p>Kadang-kadang kita bergaduh kecil, kadang-kadang adek degil. Tapi di hujung hari, kakak tetap kakak. Tempat adek pulang, orang yang adek percaya tanpa perlu bertanya kenapa.</p>
+        <p>Semoga umur yang baharu ini membawa lebih banyak ketenangan, kesihatan yang baik, rezeki yang luas, dan senyuman yang tak pernah putus. Semoga Allah permudahkan setiap langkah kakak, dan kumpulkan kita selalu dalam kebaikan.</p>
+        <p>Selamat hari lahir, Kakak. Adek sayang kakak, banyak-banyak.</p>
+      </div>
+      <p class="letter__sign reveal">Dengan penuh kasih,<br><em>Adek Firdau</em></p>
+    </div>
+  </section>
+
+  <!-- 4. KENANGAN -->
+  <section class="memories section" id="memories">
+    <p class="eyebrow reveal">Kenangan</p>
+    <h2 class="reveal">Detik yang adek simpan</h2>
+    <div class="gallery">
+      <figure class="frame reveal">
+        <div class="frame__img"><img src="images/1.jpg" alt="Kenangan bersama Kakak" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+        <figcaption>Tajuk kenangan pertama</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <div class="frame__img"><img src="images/2.jpg" alt="Kenangan bersama Kakak" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+        <figcaption>Tajuk kenangan kedua</figcaption>
+      </figure>
+      <figure class="frame reveal">
+        <div class="frame__img"><img src="images/3.jpg" alt="Kenangan bersama Kakak" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+        <figcaption>Tajuk kenangan ketiga</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. KENAPA ISTIMEWA -->
+  <section class="why section" id="why">
+    <p class="eyebrow reveal">Kakak</p>
+    <h2 class="reveal">Kenapa kakak istimewa</h2>
+    <ol class="why__list">
+      <li class="reveal"><span>I</span><h3>Penyayang</h3><p>Kasih kakak tak pernah berkira, walau adek tak selalu layak menerimanya.</p></li>
+      <li class="reveal"><span>II</span><h3>Penyabar</h3><p>Kakak sabar dengan kerenah adek, dan itu bukan perkara kecil.</p></li>
+      <li class="reveal"><span>III</span><h3>Kuat</h3><p>Kakak tabah dalam diam, dan itu yang adek cuba contohi.</p></li>
+    </ol>
+  </section>
+
+  <!-- 6. DOA -->
+  <section class="doa section" id="doa">
+    <div class="doa__box reveal">
+      <p class="eyebrow">Doa</p>
+      <blockquote>
+        Ya Allah, panjangkanlah umur Kakak dalam ketaatan, kurniakanlah kesihatan, ketenangan hati dan rezeki yang berkat. Peliharalah Kakak dan keluarga kami, dan jadikan setiap hari yang mendatang lebih baik daripada semalam.
+      </blockquote>
+      <p class="doa__amin">Aamiin.</p>
+    </div>
+  </section>
+
+  <!-- 7. LILIN -->
+  <section class="cake section" id="cake">
+    <p class="eyebrow reveal">Satu permintaan</p>
+    <h2 class="reveal">Buat hajat, kemudian tiup lilin</h2>
+    <button class="candle" id="candle" aria-label="Tiup lilin" aria-pressed="false">
+      <span class="candle__flame" aria-hidden="true"></span>
+      <span class="candle__smoke" aria-hidden="true"></span>
+      <span class="candle__wick" aria-hidden="true"></span>
+      <span class="candle__body" aria-hidden="true"></span>
+      <span class="candle__plate" aria-hidden="true"></span>
+    </button>
+    <p class="cake__hint" id="cakeHint">Sentuh lilin untuk meniupnya</p>
+    <p class="cake__done" id="cakeDone" aria-live="polite">Semoga hajat Kakak dimakbulkan.<br>Selamat hari lahir, Kakak. 🤍</p>
+  </section>
+
+  <footer class="footer">
+    <div class="rule"></div>
+    <p>Dibuat dengan sepenuh hati oleh <em>Adek Firdau</em></p>
+  </footer>
+</main>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<audio id="bgm" src="audio/lagu.mp3" loop preload="metadata"></audio>
+<script src="script.js"></script>
+</body>
+</html>
