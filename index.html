@@ -3,27 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Selamat Hari Lahir, Kakak</title>
-<meta name="description" content="Satu surat kecil untuk Kakak NurFatihah Binti Ismail.">
-<meta name="theme-color" content="#faf6ef">
+<title>Surat Untuk Kakak</title>
+<meta name="description" content="Satu hadiah kecil untuk Kakak NurFatihah Binti Ismail.">
+<meta name="theme-color" content="#0f0c14">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="locked">
 
-<!-- 1. PEMBUKA: SAMPUL SURAT -->
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<!-- PEMBUKA -->
 <section class="intro" id="intro" aria-label="Pembuka">
-  <p class="intro__hint">Ada sesuatu untuk Kakak…</p>
-  <button class="envelope" id="openBtn" aria-label="Buka surat">
-    <span class="envelope__back"></span>
-    <span class="envelope__paper"></span>
-    <span class="envelope__front"></span>
-    <span class="envelope__flap"></span>
-    <span class="envelope__seal" aria-hidden="true">F</span>
-  </button>
-  <p class="intro__cta">Sentuh untuk membuka</p>
+  <p class="intro__kicker">6 November</p>
+  <h1 class="intro__title">Ada kejutan<br>untuk <em>Kakak</em></h1>
+  <button class="orb" id="openBtn" aria-label="Buka kejutan"><span class="orb__ring"></span><span class="orb__txt">Buka</span></button>
 </section>
 
 <button class="music" id="musicBtn" aria-label="Mainkan muzik" hidden>
@@ -32,142 +28,111 @@
 
 <main id="main">
 
-  <!-- 2. HERO -->
+  <!-- HERO -->
   <header class="hero">
-    <p class="eyebrow reveal">6 November</p>
-    <h1 class="hero__title reveal">Selamat Hari Lahir</h1>
-    <div class="rule reveal"></div>
-    <p class="hero__name" id="heroName" aria-label="NurFatihah Binti Ismail">NurFatihah Binti Ismail</p>
-    <p class="hero__age reveal" id="heroAge">Tahun ke-29</p>
-    <a class="scroll-cue reveal" href="#letter" aria-label="Teruskan membaca"><span></span></a>
+    <div class="float f-a" data-speed=".10"><img src="images/2.jpg" alt=""></div>
+    <div class="float f-b" data-speed="-.06"><img src="images/f4.jpg" alt=""></div>
+    <div class="float f-c" data-speed=".14"><img src="images/f10.jpg" alt=""></div>
+    <div class="hero__inner">
+      <p class="pill reveal" id="heroAge">Tahun ke-29</p>
+      <h2 class="hero__title reveal">Selamat<br>Hari <em>Lahir</em></h2>
+      <p class="hero__name" id="heroName" aria-label="NurFatihah Binti Ismail">NurFatihah Binti Ismail</p>
+      <p class="hero__sub reveal">Satu hadiah kecil daripada adek, dengan sepenuh hati.</p>
+    </div>
+    <a class="scroll-cue" href="#letter" aria-label="Teruskan membaca"><span></span></a>
   </header>
 
-  <!-- 3. SURAT -->
-  <section class="letter section" id="letter">
-    <div class="paper">
-      <p class="letter__to reveal">Buat Kakak yang tersayang,</p>
-      <div class="letter__body" id="letterBody">
-        <p>Hari ini, adek nak berhenti sekejap daripada semua kesibukan, dan tulis sesuatu yang selalu adek simpan dalam hati tapi jarang sempat diucapkan.</p>
-        <p>Terima kasih kerana sentiasa ada. Kakak mungkin tak sedar, tapi banyak perkara kecil yang kakak buat sudah membentuk adek hari ini. Cara kakak jaga, cara kakak tegur, dan cara kakak diam-diam doakan, semuanya adek ingat.</p>
-        <p>Kadang-kadang kita bergaduh kecil, kadang-kadang adek degil. Tapi di hujung hari, kakak tetap kakak. Tempat adek pulang, orang yang adek percaya tanpa perlu bertanya kenapa.</p>
-        <p>Semoga umur yang baharu ini membawa lebih banyak ketenangan, kesihatan yang baik, rezeki yang luas, dan senyuman yang tak pernah putus. Semoga Allah permudahkan setiap langkah kakak, dan kumpulkan kita selalu dalam kebaikan.</p>
-        <p>Selamat hari lahir, Kakak. Adek sayang kakak, banyak-banyak.</p>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Selamat Hari Lahir, Kakak</span><span>✦</span><span>6 November</span><span>✦</span><span>Semoga sentiasa bahagia</span><span>✦</span>
+      <span>Selamat Hari Lahir, Kakak</span><span>✦</span><span>6 November</span><span>✦</span><span>Semoga sentiasa bahagia</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- SURAT -->
+  <section class="letter wrap" id="letter">
+    <div class="letter__label">
+      <p class="eyebrow reveal">Sepucuk surat</p>
+      <h2 class="reveal">Buat Kakak yang <em>tersayang</em></h2>
+    </div>
+    <div class="letter__body" id="letterBody">
+      <p>Hari ini, adek nak berhenti sekejap daripada semua kesibukan, dan tulis sesuatu yang selalu adek simpan dalam hati tapi jarang sempat diucapkan.</p>
+      <p>Terima kasih kerana sentiasa ada. Kakak mungkin tak sedar, tapi banyak perkara kecil yang kakak buat sudah membentuk adek hari ini. Cara kakak jaga, cara kakak tegur, dan cara kakak diam-diam doakan, semuanya adek ingat.</p>
+      <p>Kadang-kadang kita bergaduh kecil, kadang-kadang adek degil. Tapi di hujung hari, kakak tetap kakak. Tempat adek pulang, orang yang adek percaya tanpa perlu bertanya kenapa.</p>
+      <p>Semoga umur yang baharu ini membawa lebih banyak ketenangan, kesihatan yang baik, rezeki yang luas, dan senyuman yang tak pernah putus. Semoga Allah permudahkan setiap langkah kakak, dan kumpulkan kita selalu dalam kebaikan.</p>
+      <p class="strong">Selamat hari lahir, Kakak. Adek sayang kakak, banyak-banyak.</p>
+      <p class="letter__sign">Dengan penuh kasih,<br><em>Adek Firdau</em></p>
+    </div>
+  </section>
+
+  <!-- KENANGAN -->
+  <section class="gal" id="memories">
+    <div class="wrap gal__head">
+      <p class="eyebrow reveal">Kenangan</p>
+      <h2 class="reveal">Detik yang adek <em>simpan</em></h2>
+    </div>
+    <div class="reel-wrap">
+      <button class="reel-btn prev" data-reel="reel1" aria-label="Sebelum">&#8592;</button>
+      <div class="reel" id="reel1" tabindex="0" aria-label="Galeri gambar">
+        <figure class="card" style="aspect-ratio:675/900"><img src="images/1.jpg" width="675" height="900" alt="Berbaju sedondon di pagi raya" loading="lazy"><figcaption>Berbaju sedondon di pagi raya</figcaption></figure>
+        <figure class="card" style="aspect-ratio:640/800"><img src="images/2.jpg" width="640" height="800" alt="Senyuman yang sama" loading="lazy"><figcaption>Senyuman yang sama</figcaption></figure>
+        <figure class="card" style="aspect-ratio:674/900"><img src="images/3.jpg" width="674" height="900" alt="Hari bahagia kakak" loading="lazy"><figcaption>Hari bahagia kakak</figcaption></figure>
+        <figure class="card" style="aspect-ratio:900/675"><img src="images/4.jpg" width="900" height="675" alt="Di meja makan, ketawa bersama" loading="lazy"><figcaption>Di meja makan, ketawa bersama</figcaption></figure>
+        <figure class="card" style="aspect-ratio:640/480"><img src="images/5.jpg" width="640" height="480" alt="Malam yang meriah" loading="lazy"><figcaption>Malam yang meriah</figcaption></figure>
+        <figure class="card" style="aspect-ratio:675/900"><img src="images/6.jpg" width="675" height="900" alt="Berdiri di sisi kakak" loading="lazy"><figcaption>Berdiri di sisi kakak</figcaption></figure>
       </div>
-      <p class="letter__sign reveal">Dengan penuh kasih,<br><em>Adek Firdau</em></p>
+      <button class="reel-btn next" data-reel="reel1" aria-label="Seterusnya">&#8594;</button>
     </div>
   </section>
 
-  <!-- 4. KENANGAN -->
-  <section class="memories section" id="memories">
-    <p class="eyebrow reveal">Kenangan</p>
-    <h2 class="reveal">Detik yang adek simpan</h2>
-    <div class="gallery">
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/1.jpg" alt="Berbaju sedondon di pagi raya" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Berbaju sedondon di pagi raya</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/2.jpg" alt="Senyuman yang sama" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Senyuman yang sama</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/3.jpg" alt="Hari bahagia kakak" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Hari bahagia kakak</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/4.jpg" alt="Di meja makan, ketawa bersama" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Di meja makan, ketawa bersama</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/5.jpg" alt="Malam yang meriah" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Malam yang meriah</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/6.jpg" alt="Berdiri di sisi kakak" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Berdiri di sisi kakak</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 4b. KELUARGA -->
-  <section class="memories family section" id="family">
-    <p class="eyebrow reveal">Keluarga</p>
-    <h2 class="reveal">Orang-orang yang kita sayang</h2>
-    <div class="gallery">
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f1.jpg" alt="Kami bertiga" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Kami bertiga</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f2.jpg" alt="Pagi yang tenang di tepi pantai" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Pagi yang tenang di tepi pantai</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f3.jpg" alt="Sedondon merah marun" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Sedondon merah marun</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f4.jpg" alt="Di tepi pantai" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Di tepi pantai</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f5.jpg" alt="Santai di beranda" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Santai di beranda</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f6.jpg" alt="Keluarga di pagi raya" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Keluarga di pagi raya</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f7.jpg" alt="Gelak ketawa di beranda" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Gelak ketawa di beranda</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f8.jpg" alt="Malam yang riuh" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Malam yang riuh</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f9.jpg" alt="Sedondon biru" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Sedondon biru</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f10.jpg" alt="Bersama si kecil" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Bersama si kecil</figcaption>
-      </figure>
-      <figure class="frame reveal">
-        <div class="frame__img"><img src="images/f11.jpg" alt="Detik manis di ruang tamu" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
-        <figcaption>Detik manis di ruang tamu</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 5. KENAPA ISTIMEWA -->
-  <section class="why section" id="why">
+  <!-- KENAPA ISTIMEWA -->
+  <section class="why wrap" id="why">
     <p class="eyebrow reveal">Kakak</p>
-    <h2 class="reveal">Kenapa kakak istimewa</h2>
-    <ol class="why__list">
-      <li class="reveal"><span>I</span><h3>Penyayang</h3><p>Kasih kakak tak pernah berkira, walau adek tak selalu layak menerimanya.</p></li>
-      <li class="reveal"><span>II</span><h3>Penyabar</h3><p>Kakak sabar dengan kerenah adek, dan itu bukan perkara kecil.</p></li>
-      <li class="reveal"><span>III</span><h3>Kuat</h3><p>Kakak tabah dalam diam, dan itu yang adek cuba contohi.</p></li>
-    </ol>
+    <ul class="why__list">
+      <li class="reveal"><h3>Penyayang<span>.</span></h3><p>Kasih kakak tak pernah berkira, walau adek tak selalu layak menerimanya.</p></li>
+      <li class="reveal"><h3>Penyabar<span>.</span></h3><p>Kakak sabar dengan kerenah adek, dan itu bukan perkara kecil.</p></li>
+      <li class="reveal"><h3>Kuat<span>.</span></h3><p>Kakak tabah dalam diam, dan itu yang adek cuba contohi.</p></li>
+    </ul>
   </section>
 
-  <!-- 6. DOA -->
-  <section class="doa section" id="doa">
-    <div class="doa__box reveal">
-      <p class="eyebrow">Doa</p>
-      <blockquote>
-        Ya Allah, panjangkanlah umur Kakak dalam ketaatan, kurniakanlah kesihatan, ketenangan hati dan rezeki yang berkat. Peliharalah Kakak dan keluarga kami, dan jadikan setiap hari yang mendatang lebih baik daripada semalam.
-      </blockquote>
-      <p class="doa__amin">Aamiin.</p>
+  <!-- KELUARGA -->
+  <section class="gal" id="family">
+    <div class="wrap gal__head">
+      <p class="eyebrow reveal">Keluarga</p>
+      <h2 class="reveal">Orang-orang yang <em>kita sayang</em></h2>
+    </div>
+    <div class="reel-wrap">
+      <button class="reel-btn prev" data-reel="reel2" aria-label="Sebelum">&#8592;</button>
+      <div class="reel" id="reel2" tabindex="0" aria-label="Galeri gambar">
+        <figure class="card" style="aspect-ratio:506/900"><img src="images/f1.jpg" width="506" height="900" alt="Kami bertiga" loading="lazy"><figcaption>Kami bertiga</figcaption></figure>
+        <figure class="card" style="aspect-ratio:800/600"><img src="images/f2.jpg" width="800" height="600" alt="Pagi yang tenang di tepi pantai" loading="lazy"><figcaption>Pagi yang tenang di tepi pantai</figcaption></figure>
+        <figure class="card" style="aspect-ratio:900/416"><img src="images/f3.jpg" width="900" height="416" alt="Sedondon merah marun" loading="lazy"><figcaption>Sedondon merah marun</figcaption></figure>
+        <figure class="card" style="aspect-ratio:900/675"><img src="images/f4.jpg" width="900" height="675" alt="Di tepi pantai" loading="lazy"><figcaption>Di tepi pantai</figcaption></figure>
+        <figure class="card" style="aspect-ratio:640/799"><img src="images/f5.jpg" width="640" height="799" alt="Santai di beranda" loading="lazy"><figcaption>Santai di beranda</figcaption></figure>
+        <figure class="card" style="aspect-ratio:675/900"><img src="images/f6.jpg" width="675" height="900" alt="Keluarga di pagi raya" loading="lazy"><figcaption>Keluarga di pagi raya</figcaption></figure>
+        <figure class="card" style="aspect-ratio:720/540"><img src="images/f7.jpg" width="720" height="540" alt="Gelak ketawa di beranda" loading="lazy"><figcaption>Gelak ketawa di beranda</figcaption></figure>
+        <figure class="card" style="aspect-ratio:506/900"><img src="images/f8.jpg" width="506" height="900" alt="Malam yang riuh" loading="lazy"><figcaption>Malam yang riuh</figcaption></figure>
+        <figure class="card" style="aspect-ratio:900/600"><img src="images/f9.jpg" width="900" height="600" alt="Sedondon biru" loading="lazy"><figcaption>Sedondon biru</figcaption></figure>
+        <figure class="card" style="aspect-ratio:675/900"><img src="images/f10.jpg" width="675" height="900" alt="Bersama si kecil" loading="lazy"><figcaption>Bersama si kecil</figcaption></figure>
+        <figure class="card" style="aspect-ratio:675/900"><img src="images/f11.jpg" width="675" height="900" alt="Detik manis di ruang tamu" loading="lazy"><figcaption>Detik manis di ruang tamu</figcaption></figure>
+      </div>
+      <button class="reel-btn next" data-reel="reel2" aria-label="Seterusnya">&#8594;</button>
     </div>
   </section>
 
-  <!-- 7. LILIN -->
-  <section class="cake section" id="cake">
+  <!-- DOA -->
+  <section class="doa wrap" id="doa">
+    <p class="eyebrow reveal">Doa</p>
+    <blockquote class="reveal">Ya Allah, panjangkanlah umur Kakak dalam ketaatan, kurniakanlah kesihatan, ketenangan hati dan rezeki yang berkat. Peliharalah Kakak dan keluarga kami, dan jadikan setiap hari yang mendatang lebih baik daripada semalam.</blockquote>
+    <p class="doa__amin reveal"><em>Aamiin.</em></p>
+  </section>
+
+  <!-- LILIN -->
+  <section class="cake wrap" id="cake">
     <p class="eyebrow reveal">Satu permintaan</p>
-    <h2 class="reveal">Buat hajat, kemudian tiup lilin</h2>
+    <h2 class="reveal">Buat hajat, kemudian <em>tiup lilin</em></h2>
     <button class="candle" id="candle" aria-label="Tiup lilin" aria-pressed="false">
+      <span class="candle__glow" aria-hidden="true"></span>
       <span class="candle__flame" aria-hidden="true"></span>
       <span class="candle__smoke" aria-hidden="true"></span>
       <span class="candle__wick" aria-hidden="true"></span>
@@ -175,13 +140,10 @@
       <span class="candle__plate" aria-hidden="true"></span>
     </button>
     <p class="cake__hint" id="cakeHint">Sentuh lilin untuk meniupnya</p>
-    <p class="cake__done" id="cakeDone" aria-live="polite">Semoga hajat Kakak dimakbulkan.<br>Selamat hari lahir, Kakak. 🤍</p>
+    <p class="cake__done" id="cakeDone" aria-live="polite">Semoga hajat Kakak dimakbulkan.<br><em>Selamat hari lahir, Kakak.</em></p>
   </section>
 
-  <footer class="footer">
-    <div class="rule"></div>
-    <p>Dibuat dengan sepenuh hati oleh <em>Adek Firdau</em></p>
-  </footer>
+  <footer class="footer"><p>Dibuat dengan sepenuh hati oleh <em>Adek Firdau</em></p></footer>
 </main>
 
 <canvas id="confetti" aria-hidden="true"></canvas>
