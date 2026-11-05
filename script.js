@@ -106,15 +106,23 @@
     r.scrollBy({ left: (b.classList.contains('next') ? 1 : -1) * r.clientWidth * .7, behavior: 'smooth' });
   }));
 
-  /* Muzik (pilihan: audio/lagu.mp3) */
+  /* Muzik latar: bermula serta-merta bila kakak tekan "Buka", berterusan sepanjang laman */
   const bgm = $('#bgm'), mBtn = $('#musicBtn');
-  bgm.addEventListener('loadedmetadata', () => { mBtn.hidden = false; });
-  bgm.volume = .6;
-  function startMusic() { if (!mBtn.hidden) bgm.play().then(() => mBtn.classList.add('on')).catch(() => {}); }
+  bgm.volume = .7;
+  const setMusicUI = on => {
+    mBtn.classList.toggle('on', on);
+    mBtn.setAttribute('aria-label', on ? 'Jeda muzik' : 'Mainkan muzik');
+  };
+  setMusicUI(false);
+  function startMusic() {
+    const p = bgm.play();            // dipanggil terus dalam klik supaya dibenarkan oleh iPhone/Android
+    if (p && p.then) p.then(() => setMusicUI(true)).catch(() => setMusicUI(false));
+  }
   mBtn.addEventListener('click', () => {
-    if (bgm.paused) { bgm.play(); mBtn.classList.add('on'); mBtn.setAttribute('aria-label', 'Jeda muzik'); }
-    else { bgm.pause(); mBtn.classList.remove('on'); mBtn.setAttribute('aria-label', 'Mainkan muzik'); }
+    if (bgm.paused) startMusic(); else { bgm.pause(); setMusicUI(false); }
   });
+  bgm.addEventListener('play', () => setMusicUI(true));
+  bgm.addEventListener('pause', () => setMusicUI(false));
 
   /* Lilin + confetti */
   const candle = $('#candle'), cake = $('#cake');

@@ -22,7 +22,7 @@
   <button class="orb" id="openBtn" aria-label="Buka kejutan"><span class="orb__ring"></span><span class="orb__txt">Buka</span></button>
 </section>
 
-<button class="music" id="musicBtn" aria-label="Mainkan muzik" hidden>
+<button class="music" id="musicBtn" aria-label="Jeda muzik">
   <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i></span>
 </button>
 
@@ -217,7 +217,7 @@
 </main>
 
 <canvas id="confetti" aria-hidden="true"></canvas>
-<audio id="bgm" src="audio/lagu.mp3" loop preload="metadata"></audio>
+<audio id="bgm" src="audio/lagu.mp3" loop preload="auto" playsinline></audio>
 <script src="script.js"></script>
 </body>
 </html>
