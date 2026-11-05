@@ -4,6 +4,6 @@ Landing page hari lahir (statik: HTML/CSS/JS). Buka `index.html` atau jalankan `
 
 ## Untuk diganti
 - **Isi surat**: `index.html`, bahagian `#letter`
-- **Gambar**: letak `images/1.jpg`, `2.jpg`, `3.jpg` (tukar kapsyen dalam `index.html`)
+- **Gambar**: gambar dalam `images/1.jpg` hingga `6.jpg` (tukar kapsyen dalam `index.html`)
 - **Muzik**: letak `audio/lagu.mp3`; butang muzik muncul secara automatik
 - **Warna**: pembolehubah `:root` di `style.css`
