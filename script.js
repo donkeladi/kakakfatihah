@@ -135,5 +135,18 @@
     candle.classList.add('out'); candle.setAttribute('aria-pressed', 'true');
     cake.classList.add('done');
     setTimeout(burst, 350);
+    setTimeout(() => revealBtn.classList.add('show'), reduce ? 200 : 2600);
+  });
+
+  /* Special reveal */
+  const revealBtn = $('#revealBtn'), special = $('#special');
+  revealBtn.addEventListener('click', () => {
+    special.hidden = false;
+    revealBtn.classList.remove('show');
+    requestAnimationFrame(() => {
+      special.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      setTimeout(() => special.classList.add('on'), reduce ? 0 : 700);
+      setTimeout(burst, reduce ? 0 : 1100);
+    });
   });
 })();
