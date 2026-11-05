@@ -159,6 +159,57 @@
       </div>
       <p class="special__text">Dari kecil lagi, kakak sudah jadi tempat adek berpaut. Terima kasih kerana tak pernah lepaskan tangan adek, dulu, kini dan selamanya.</p>
       <p class="special__sign"><em>Selamat hari lahir, Kakak. Dari adek yang sama.</em></p>
+      <button class="more" id="nextBtn" type="button">Satu lagi, Kak <span aria-hidden="true">&#8595;</span></button>
+    </div>
+  </section>
+
+  <!-- FINALE: KALENDAR, QR TNG, KAD GORES -->
+  <section class="finale" id="finale" hidden aria-label="Hadiah untuk Kakak">
+    <div class="wrap">
+      <p class="eyebrow">Hujung sekali</p>
+      <h2>Satu ujian <em>untuk Kakak</em></h2>
+      <p class="finale__lead">Isi tarikh lahir Adik Firdaus dengan tepat untuk membuka hadiah kakak.</p>
+
+      <div class="gate" id="gate">
+        <div class="cal" id="cal">
+          <div class="cal__bar">
+            <button type="button" class="cal__nav" id="calPrev" aria-label="Bulan sebelum">&#8592;</button>
+            <select id="calMonth" aria-label="Bulan"></select>
+            <select id="calYear" aria-label="Tahun"></select>
+            <button type="button" class="cal__nav" id="calNext" aria-label="Bulan seterusnya">&#8594;</button>
+          </div>
+          <div class="cal__dow" aria-hidden="true"><span>Ahd</span><span>Isn</span><span>Sel</span><span>Rab</span><span>Kha</span><span>Jum</span><span>Sab</span></div>
+          <div class="cal__grid" id="calGrid"></div>
+          <p class="cal__sel" id="calSel" aria-live="polite">Belum pilih tarikh</p>
+          <button type="button" class="btn" id="calOk" disabled>Sahkan tarikh</button>
+          <p class="cal__msg" id="calMsg" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="prize" id="prize" hidden>
+        <div class="prize__card">
+          <p class="eyebrow">Tarikh tepat</p>
+          <h3>Betul! Kakak memang <em>terbaik.</em></h3>
+          <p>Kakak terbaik sejak 26 tahun, sejak Adik Firdaus terlahir. Imbas kod QR di bawah dengan TNG eWallet untuk tuntut Duit Bonus kakak.</p>
+          <figure class="qr">
+            <div class="qr__box"><img src="images/tng-qr.png" alt="Kod QR TNG eWallet untuk tuntut Duit Bonus" onerror="this.parentNode.classList.add('empty')"></div>
+            <figcaption>Imbas dengan TNG eWallet</figcaption>
+          </figure>
+        </div>
+
+        <div class="prize__scratch">
+          <p class="eyebrow">Kejutan kedua</p>
+          <h3>Gores untuk <em>dedahkan</em></h3>
+          <div class="scratch" id="scratch">
+            <div class="scratch__notice">
+              <span class="scratch__tag">Notis hadiah</span>
+              <strong>HADIAH TAHUNAN MACAM BIASA, DELIVERY KE RUMAH SELEPAS KERJA, TUNGGU YE.</strong>
+            </div>
+            <canvas id="scratchCv" aria-label="Gores dengan jari atau tetikus untuk membuka notis"></canvas>
+          </div>
+          <button type="button" class="linkbtn" id="scratchSkip">Tak boleh gores? Tekan sini</button>
+        </div>
+      </div>
     </div>
   </section>
 
