@@ -49,22 +49,37 @@
       intro.classList.add('gone');
       document.body.classList.remove('locked');
       window.scrollTo(0, 0);
+      hero.classList.add('go');
+      hero.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
       watch();
     }, reduce ? 50 : 250);
   });
 
-  /* Parallax gambar hero */
-  const floats = [...document.querySelectorAll('.float')];
+  /* Hero: parallax kedalaman + condong 3D mengikut tetikus */
+  const hero = $('#hero');
   if (!reduce) {
     let tick = false;
     addEventListener('scroll', () => {
       if (tick) return; tick = true;
       requestAnimationFrame(() => {
         const y = Math.min(scrollY, innerHeight * 1.2);
-        floats.forEach(f => f.style.setProperty('--py', (y * parseFloat(f.dataset.speed)) + 'px'));
+        hero.style.setProperty('--py', (y * .12) + 'px');
+        hero.style.setProperty('--ty', (y * -.18) + 'px');
         tick = false;
       });
     }, { passive: true });
+    if (matchMedia('(hover:hover)').matches) {
+      hero.addEventListener('pointermove', e => {
+        const r = hero.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        hero.style.setProperty('--ry', (x * 9) + 'deg');
+        hero.style.setProperty('--rx', (-y * 5) + 'deg');
+        hero.style.setProperty('--fx', (x * -14) + 'px');
+        hero.style.setProperty('--ox', (x * 30) + 'px');
+        hero.style.setProperty('--oy', (y * 20) + 'px');
+      });
+      hero.addEventListener('pointerleave', () => ['--ry','--rx','--fx','--ox','--oy'].forEach(k => hero.style.removeProperty(k)));
+    }
   }
 
   /* Galeri gelongsor: seret dengan tetikus + butang */

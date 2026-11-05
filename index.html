@@ -29,13 +29,17 @@
 <main id="main">
 
   <!-- HERO -->
-  <header class="hero">
-    <div class="float f-a" data-speed=".10"><img src="images/2.jpg" alt=""></div>
-    <div class="float f-b" data-speed="-.06"><img src="images/f4.jpg" alt=""></div>
-    <div class="float f-c" data-speed=".14"><img src="images/f10.jpg" alt=""></div>
-    <div class="hero__inner">
+  <header class="hero" id="hero">
+    <div class="hero__stage" aria-hidden="true">
+      <div class="hero__ring"></div>
+      <div class="hero__halo"></div>
+      <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+    </div>
+    <h2 class="hero__title">Selamat <br>Hari <em>Lahir</em></h2>
+    <img class="hero__fig" src="images/hero.webp" width="631" height="795" alt="NurFatihah Binti Ismail dalam busana biru berpusing anggun">
+    <div class="hero__fade" aria-hidden="true"></div>
+    <div class="hero__info">
       <p class="pill reveal" id="heroAge">Tahun ke-29</p>
-      <h2 class="hero__title reveal">Selamat<br>Hari <em>Lahir</em></h2>
       <p class="hero__name" id="heroName" aria-label="NurFatihah Binti Ismail">NurFatihah Binti Ismail</p>
       <p class="hero__sub reveal">Satu hadiah kecil daripada adek, dengan sepenuh hati.</p>
     </div>
